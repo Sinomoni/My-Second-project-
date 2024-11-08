@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOD TRACKER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+        <!-- Left Logo -->
+        <img src="mini_magick20240916-38015-qlm36y.png" alt="Site Logo" style="width: 120px; height: 120px; padding-left: 80px;">
+    
+        <!-- Heading -->
+        <h1 style="font-family: 'Helvetica', sans-serif; font-size: 40px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; text-align: center; margin: 0;">
+            Mental Health & Well-being
+        </h1>
+    
+        <!-- Right Logo -->
+        <img src="mini_magick20240916-38015-qlm36y.png" alt="Site Logo" style="width: 120px; height: 120px;padding-right: 80px;">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="chat.html">Chat with Counselor</a></li>
+            <li><a href="moodtracker.html">Mood Tracker</a></li>
+            <li><a href="meditations.html">Meditations</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="home.html" class="back-button">
+            <img src="back-icon.png" alt="Back Icon" class="back-icon">
+            Back to Home
+        </a>
+        <section>
+            <h2>Welcome to Your Mood Tracker</h2>
+            <p>The Mood Tracker is a tool designed to help you monitor and understand your emotional well-being throughout your academic journey. By regularly recording your mood and noting any related thoughts or experiences, you can gain valuable insights into your emotional patterns and identify factors that impact your mental health.</p>
+            <p><strong>How to Use This Tool:</strong></p>
+            <ul>
+                <li><strong>Record Your Mood:</strong> Each day, take a moment to log your mood using the dropdown menu. Select the mood that best represents how you’re feeling.</li>
+                <li><strong>Add Notes:</strong> Use the notes section to describe any significant events, thoughts, or feelings that might have influenced your mood.</li>
+                <li><strong>Review Your Logs:</strong> Track your mood over time and review past entries to recognize patterns and triggers. This can help you make informed decisions about managing stress and seeking support when needed.</li>
+            </ul>
+            <p>By staying in tune with your emotional state, you can better manage stress and make proactive changes to support your mental well-being. Remember, this tool is here to support you in your journey towards a healthier, balanced life.</p>
+        </section>
+    </div>
+
+    <div class="container">
+        <form id="moodForm">
+            <label for="moodDate">Date</label>
+            <input type="date" id="moodDate" name="moodDate" required>
+            
+            <label for="moodLevel">Mood Level</label>
+            <select id="moodLevel" name="moodLevel" required>
+                <option value="" disabled selected>Select your mood</option>
+                <option value="very_bad">Very Bad</option>
+                <option value="bad">Bad</option>
+                <option value="neutral">Neutral</option>
+                <option value="good">Good</option>
+                <option value="very_good">Very Good</option>
+            </select>
+            
+            <label for="moodNotes">Notes</label>
+            <textarea id="moodNotes" name="moodNotes" rows="4" placeholder="Additional notes about your mood..."></textarea>
+            
+            <button type="submit">Save Mood</button>
+        </form>
+
+        <div class="mood-logs">
+            <h2>Previous Mood Logs</h2>
+            
+            <!-- Additional logs will be dynamically added here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mental Health & Well-being App. All rights reserved.</p>
+        <p>
+            <a href="/privacy-policy" style="color: white; text-decoration: none;">Privacy Policy</a> |
+            <a href="/terms-of-service" style="color: white; text-decoration: none;">Terms of Service</a>
+        </p>
+        <p>Follow us on:
+            <a href="https://facebook.com/yourprofile" style="color: white; text-decoration: none; ">Facebook</a> |
+            <a href="https://twitter.com/yourprofile" style="color: white; text-decoration: none;">Twitter</a> |
+            <a href="https://instagram.com/yourprofile" style="color: white; text-decoration: none;">Instagram</a>
+        </p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

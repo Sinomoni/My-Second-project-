@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .contact-info, .contact-form {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .contact-info h2, .contact-form h2 {
+            margin: 0 0 0.5rem;
+        }
+        .contact-info p, .contact-form p {
+            margin: 0.5rem 0;
+        }
+        .contact-form label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.25rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+    </style>
+
+<script>
+    function showAlert(event) {
+        // Prevent the form from submitting
+        event.preventDefault();
+
+        // Display the pop-up message
+        alert("Form submitted successfully!");
+
+        // Clear the form fields
+        document.getElementById("myForm").reset();
+    }
+</script>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+        <!-- Left Logo -->
+        <img src="mini_magick20240916-38015-qlm36y.png" alt="Site Logo" style="width: 120px; height: 120px; padding-left: 80px;">
+    
+        <!-- Heading -->
+        <h1 style="font-family: 'Helvetica', sans-serif; font-size: 40px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; text-align: center; margin: 0;">
+            Mental Health & Well-being
+        </h1>
+    
+        <!-- Right Logo -->
+        <img src="mini_magick20240916-38015-qlm36y.png" alt="Site Logo" style="width: 120px; height: 120px;padding-right: 80px;">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="chat.html">Chat with Counselor</a></li>
+            <li><a href="moodtracker.html">Mood Tracker</a></li>
+            <li><a href="meditations.html">Meditations</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="home.html" class="back-button">
+            <img src="back-icon.png" alt="Back Icon" class="back-icon">
+            Back to Home
+        </a>
+        
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions, feedback, or need assistance, feel free to reach out to us through the following methods:</p>
+            <p><strong>Email:</strong> support@mentalhealthapp.com</p>
+            <p><strong>Phone:</strong> 040 123 4567</p>
+            <p><strong>Address:</strong> Alice Campus, 1 King Williamstown Rd, Alice, 5700</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="myForm" onsubmit="showAlert(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mental Health & Well-being App. All rights reserved.</p>
+        <p>
+            <a href="/privacy-policy" style="color: white; text-decoration: none;">Privacy Policy</a> |
+            <a href="/terms-of-service" style="color: white; text-decoration: none;">Terms of Service</a>
+        </p>
+        <p>Follow us on:
+            <a href="https://facebook.com/yourprofile" style="color: white; text-decoration: none; ">Facebook</a> |
+            <a href="https://twitter.com/yourprofile" style="color: white; text-decoration: none;">Twitter</a> |
+            <a href="https://instagram.com/yourprofile" style="color: white; text-decoration: none;">Instagram</a>
+        </p>
+</footer>
+</body>
+</html>

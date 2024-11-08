@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylesLogin.css">
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+        <!-- Left Logo -->
+        <img src="mini_magick20240916-38015-qlm36y.png" alt="Site Logo" style="width: 120px; height: 120px; padding-left: 80px;">
+    
+        <!-- Heading -->
+        <h1 style="font-family: 'Helvetica', sans-serif; font-size: 40px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; text-align: center; margin: 0;">
+            Mental Health & Well-being
+        </h1>
+    
+        <!-- Right Logo -->
+        <img src="mini_magick20240916-38015-qlm36y.png" alt="Site Logo" style="width: 120px; height: 120px;padding-right: 80px;">
+    </header>
+
+    <div class="container"> 
+        
+        <div class="login-container" >
+            <form action="home.html">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+                <br><br><br>
+                <button type="submit" >Login</button>
+                
+                <br><br><br>
+                <p >Don't have an account? <a href="#">Sign-Up</a></p>
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer style="position: relative; bottom: 0; width: 100%; text-align: center;">
+        <p>&copy; 2024 Mental Health & Well-being App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

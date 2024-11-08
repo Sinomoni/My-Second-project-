@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT SUPPORT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+        <!-- Left Logo -->
+        <img src="mini_magick20240916-38015-qlm36y.png" alt="Site Logo" style="width: 120px; height: 120px; padding-left: 80px;">
+    
+        <!-- Heading -->
+        <h1 style="font-family: 'Helvetica', sans-serif; font-size: 40px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; text-align: center; margin: 0;">
+            Mental Health & Well-being
+        </h1>
+    
+        <!-- Right Logo -->
+        <img src="mini_magick20240916-38015-qlm36y.png" alt="Site Logo" style="width: 120px; height: 120px;padding-right: 80px;">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="chat.html">Chat with Counselor</a></li>
+            <li><a href="moodtracker.html">Mood Tracker</a></li>
+            <li><a href="meditations.html">Meditations</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Chat Section -->
+    <div class="container">
+        <a href="home.html" class="back-button">
+            <img src="back-icon.png" alt="Back Icon" class="back-icon">
+            Back to Home
+        </a>
+        <section id="chat">
+            <h2>Connect with a Support Specialist</h2>
+
+            <div id="chatHistory"></div>
+            <textarea id="chatInput" placeholder="Type your message..."></textarea>
+            <br>
+            <button id="sendMessage">Send</button>
+            <button id="clearChat">Clear Chat</button> <!-- Clear Chat Button -->
+        </section>
+
+        <!-- Confirmation Modal -->
+        <div id="clearChatModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Confirm Clear Chat</h3>
+                <p>Are you sure you want to clear the chat? This action cannot be undone.</p>
+                <button id="confirmClearChat">Yes, Clear Chat</button>
+                <button id="cancelClearChat">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <p>&copy; 2024 Mental Health & Well-being App. All rights reserved.</p>
+        <p>
+            <a href="/privacy-policy" style="color: white; text-decoration: none;">Privacy Policy</a> |
+            <a href="/terms-of-service" style="color: white; text-decoration: none;">Terms of Service</a>
+        </p>
+        <p>Follow us on:
+            <a href="https://facebook.com/yourprofile" style="color: white; text-decoration: none; ">Facebook</a> |
+            <a href="https://twitter.com/yourprofile" style="color: white; text-decoration: none;">Twitter</a> |
+            <a href="https://instagram.com/yourprofile" style="color: white; text-decoration: none;">Instagram</a>
+        </p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

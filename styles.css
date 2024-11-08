@@ -1,0 +1,360 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cbe4f9;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+    color: rgb(253, 249, 3);
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #007bff; /* Slightly different blue for icon box */
+    padding: 0.5em;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: darkblue;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: blue; /* Light gray color on hover */
+}
+
+section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #468499;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form select, form textarea, form button {
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #6a9fb5;
+    color: white;
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #468499;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
+/* CHAT BOT SECNTIOON FORMATIING */
+#chat {
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+#chatHistory {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+#chatInput {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+#chatHistory > div {
+    margin-bottom: 1em;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------HOME PAGE MENU STYLINGS--------------------*/
+
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: column; /* Stack options vertically */
+    align-items: center; /* Center align options */
+}
+
+.menu-options {
+    display: flex;
+    gap: 20px; /* Space between the options */
+}
+
+.option {
+    background-color: blue; /* Blue background for each option */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: white; /* Text color */
+    width: 180px; /* Fixed width for uniformity */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.option:hover {
+    background-color: darkblue; /* Darker blue on hover */
+}
+
+.icon {
+    background-color: #007bff; /* Slightly different blue for icon box */
+    border-radius: 50%; /* Circular icon box */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.icon img {
+    width: 50px; /* Adjust icon size */
+    height: 50px; /* Adjust icon size */
+}
+
+/* ---------------------------------------Meditations Section--------------------*/
+/* styles.css */
+/* Ensure basic styling for the video container */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Style individual video items */
+.video-item {
+    width: 640px; /* Adjust as needed */
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 360px; /* Adjust as needed */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.video-description {
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #f9f9f9; /* Background color for description */
+    border: 4px solid #3c02fe; /* Border around the description */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.video-description h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color:#3c02fe;
+}
+
+.video-description p {
+    font-size: 14px;
+    color: black;
+}
+
+
+/*--------------------------MOOD TRACKER SECTION--------------------------------------------*/
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkblue;
+}
+.mood-logs {
+    margin-top: 2rem;
+}
+.mood-log {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*Back Button Styles*/
+.back-button {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+}
+.back-button .back-icon {
+    width: 20px; /* Adjust the size of the icon */
+    height: 20px;
+    margin-right: 0.5rem; /* Space between the icon and text */
+}
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Hover Effect for the Sign Out Button */
+.signout-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.signout-button:hover {
+    background-color: darkblue; /* Darker blue on hover */
+}
+
+.signout-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.signout-container {
+    text-align: right;
+    margin: 20px;
+}

@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #cbe4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+    color: rgb(253, 249, 3);
+    padding: 1em;
+    text-align: center;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #cbe4f9;   
+}
+
+
+.login-container {
+    border: 1px solid #ccc; /* Optional: Add a border for visual appeal */
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Optional: Background color */
+}
+
+/* Increase font size for labels */
+label {
+    font-size: 24px;
+    color: blue;
+}
+
+/* Increase font size and padding for input fields */
+input[type="text"],
+input[type="password"] {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%; /* Adjust width as needed */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+/* Optional: Increase font size for the button */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+}
+
